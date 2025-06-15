@@ -11,9 +11,10 @@ import {
   Award,
   GraduationCap,
   Languages,
-  Heart
+  // Heart
  
 } from 'lucide-react';
+
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
                 <Mail size={20} /> Contact Me
               </a>
               <a
-                href="https://drive.google.com/file/d/1dULTrZyfzQILd5N5J5xXXIQzUI1QP4yd/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1pe1ZEul4svyEIR3Fce85UzXK4M2yS4GE/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center gap-2"
@@ -53,9 +54,7 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <img
-                src="https://raw.githubusercontent.com/M-HARIJOTSNA/Portfolio/main/Harijotsna_portfolio_pic.jpg" alt="Harijotsna Portfolio Photo" />
-                
+              <img src={`${import.meta.env.BASE_URL}myProfile.jpg`} alt="Profile" />
             </div>
 
             <div className="md:w-1/2">
@@ -183,6 +182,25 @@ function App() {
                 <h3 className="text-xl font-semibold mb-2">Frontend Development Internship</h3>
                 <p className="text-gray-600 mb-4">
                   Implemented responsive designs and developed user interfaces at Unify Technologies
+                </p>
+                <a
+                  href="#"
+                  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-2"
+                >
+                  Learn More <ExternalLink size={16} />
+                </a>
+              </div>
+            </div>
+             <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <img
+                src={`${import.meta.env.BASE_URL}sms.jpg`}
+                alt="Frontend Development"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Student Management System</h3>
+                <p className="text-gray-600 mb-4">
+                  A full-stack web application to manage student records with features like add, update, delete, and search. Built using Spring Boot for backend, MySQL for data storage, and JSP for the frontend. Implemented full CRUD operations with proper validation and a clean UI.
                 </p>
                 <a
                   href="#"
