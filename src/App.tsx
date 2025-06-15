@@ -54,7 +54,7 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <img src={`${import.meta.env.BASE_URL}myProfile.jpg`} alt="Profile" />
+              <img src='/myProfile.jpg' alt="Profile" />
             </div>
 
             <div className="md:w-1/2">
@@ -193,7 +193,7 @@ function App() {
             </div>
              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
               <img
-                src={`${import.meta.env.BASE_URL}sms.jpg`}
+                src='/sms.jpg'
                 alt="Frontend Development"
                 className="w-full h-48 object-cover"
               />
